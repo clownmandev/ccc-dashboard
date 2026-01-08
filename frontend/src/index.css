@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar for Dashboard */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #171717; }
+::-webkit-scrollbar-thumb { background: #404040; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #ea580c; }
