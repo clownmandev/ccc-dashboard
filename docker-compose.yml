@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+  backend:
+    build: ./backend
+    ports:
+      - "3001:3001"
+    volumes:
+      # If you have SSH keys on your server, you will map them in Portainer later.
+      # For now, this line is a placeholder.
+      - /root/.ssh/id_rsa:/app/id_rsa:ro
